@@ -58,10 +58,12 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M4</version>
         <configuration>
+          <forkCount>1.5C</forkCount>
+          <!--
           <useSystemClassLoader>false</useSystemClassLoader>
           <redirectTestOutputToFile>true</redirectTestOutputToFile>
-          <forkCount>1.5C</forkCount>
           <reuseForks>false</reuseForks>
+          -->
         </configuration>
       </plugin>
       <plugin>
